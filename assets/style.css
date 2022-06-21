@@ -8,11 +8,11 @@
 }
 html {
     scroll-behavior: smooth;
-    box-sizing: border-box;
 }
 
 * {
     font-family: monospace;
+    box-sizing: border-box;
 }
 
 header, main, footer {
@@ -51,24 +51,24 @@ header > * {
     padding: 5px 0;
 }
 
-.header-logo-name > h1 {
+.header-logo-name h1 {
     padding-left: 10px;
 }
 
 header a, footer a {
     color: var(--color1);
 }
+
 nav {
     display: flex;
 }
 
-
 .nav-ul {
-    position: relative;
     display: flex;
     justify-content: center;
     align-content: center;
 }
+
 .nav-ul li {
     display: flex;
     flex-wrap: wrap;
@@ -80,16 +80,40 @@ nav {
 }
 
 /*Main CSS*/
+main {
+    
+    /*align-items: center;
+    justify-content: center;*/
+}
+
 .section1, .section2, .section3 {
-    width: auto;
-    height: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     font-weight: normal;
+    border: solid 1px red;
 }
 
+.section-1-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.section1 img {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 5 128px;
+    height: 20%;
+    width: 20%;
+}
+
+.flex-box {
+    display: flex;
+    flex-wrap: wrap;
+}
 .text {
     font-size: 16px;
 }
@@ -102,4 +126,9 @@ nav {
 h2 {
     align-items: flex-start;
     padding: 1%;
+}
+
+figure {
+    display: flex;
+    border: solid 2px green;
 }
