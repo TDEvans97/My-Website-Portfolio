@@ -1,3 +1,11 @@
+:root {
+    /*Darkest to lightest in color palette*/
+    --color5: #022b3a;
+    --color4: #1f7a8c;
+    --color3: #bfdbf7;
+    --color2: #e1e5f2;
+    --color1: #ffffff;
+}
 html {
     scroll-behavior: smooth;
     box-sizing: border-box;
@@ -16,13 +24,18 @@ header, main, footer {
 header, footer {
     justify-content: space-around;
     align-items: center;
-    background-color: #455E5A;
+    background-color: var(--color5);
+    color: var(--color1);
     padding: 10px 0;
     
 }
 /*Header CSS */
 header {
     max-height: 50%;
+}
+
+header > * {
+    padding: 0 1vw;
 }
 
 .header-logo-name {
@@ -42,13 +55,13 @@ header {
     padding-left: 10px;
 }
 
+header a, footer a {
+    color: var(--color1);
+}
 nav {
     display: flex;
 }
 
-header > * {
-    padding: 0 1vw;
-}
 
 .nav-ul {
     position: relative;
