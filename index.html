@@ -4,64 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/reset.css">
-    <link rel="stylesheet" href="/assets/style.css">
-    <link rel="stylesheet" href="/assets/images/">
+    <link rel="stylesheet" href="assets/reset.css">
+    <link rel="stylesheet" href="assets/style.css">
     <title>Tyler Evans | Web Dev</title>
 </head>
 <body>
     <header id="top-of-page">
-        <div class="logo-container">
-            <div class="logo">
-                <img src="assets/images/tyler's logo transparent .png" alt="Developer's custom logo.">
-            </div>
+        <div class="header-logo-name">
+            <img class="flex-image" src="assets/images/tyler's logo transparent .png" alt="Developer's custom logo.">
+            <h1>Tyler Evans | Web Developer</h1>
         </div>
         <nav>
             <!--Links smooth scroll to their respective sections.-->
-            <a href="#about-me">About Me</a>
-            <a href="#my-projects">My Projects</a>
-            <a href="#contact-me">Contact Me</a>
+            <ul class="nav-ul">
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#my-projects">My Projects</a></li>
+            <li><a href="#contact-me">Contact Me</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
-        <section id="about-me">
+        <section class="section1" id="about-me">
             <h2 class="section-headers">About Me</h2>
             <img src="assets/images/Headshot TE.JPG" alt="Headshot photo of Tyler Evans">
-            <p>Hello and welcome to this portfolio! My name is Tyler Evans. I am a native Floridian that has moved up and down the east coast for the majority of my life. I consider Port St. Lucie, my current residence, to be my hometown. I am currently a student attending the University of Central Florida's Full-Stack Flex Program. Technology, web development, and graphic design had always peaked my interest growing up. Upon exiting high school however, I decided to pursue music education as a career path. I cannot say that I regret choosing this career path initially for if I had not, then I would constantly be pondering the question "what if", while working in another career. I will cherish the memories made in music education forever while working towards an exciting future in web development.</p>
+            <p class="text">Hello and welcome to this portfolio! My name is Tyler Evans. I am a native Floridian that has moved up and down the east coast for the majority of my life. I consider Port St. Lucie, my current residence, to be my hometown. I am currently a student attending the University of Central Florida's Full-Stack Flex Program. Technology, web development, and graphic design had always peaked my interest growing up. Upon exiting high school however, I decided to pursue music education as a career path. I cannot say that I regret choosing this career path initially for if I had not, then I would constantly be pondering the question "what if", while working in another career. I will cherish the memories made in music education forever while working towards an exciting future in web development.</p>
         </section>
 
         <!-- Images in this section will link to the applications referenced in the image.
         The current hrefs are used as functional filler until updated with my own developer projects later. -->
-        <section id="my-projects">
+        <section class="section2" id="my-projects">
             <h2 class="section-headers">My Projects</h2>
             <!--Card 1-->
             <figure>
                 <a href="https://www.calculator.net/" target="_blank">
                     <img src="assets/images/calculator.net-image.png" alt="Picture of a calculator web application.">
                 </a>
-                <figcaption>Filler text</figcaption>
+                <figcaption class="text">Filler text</figcaption>
             </figure>
             <!--Card 2-->
             <figure>
                 <a href="https://playtictactoe.org/" target="_blank">
                     <img src="assets/images/tic-tac-toe.png" alt="Picture of a tic-tac-toe board application.">
                 </a>
-                <figcaption>Filler text</figcaption>
+                <figcaption class="text">Filler text</figcaption>
             </figure>
             <!--Card 3-->
             <figure>
                 <a href="https://tdevans97.github.io/Week-1-Challenge/" target="_blank">
                     <img src="assets/images/horiseon.png" alt="Image of the Horiseon website on initial load-up.">
                 </a>
-                <figcaption>Filler text</figcaption>
+                <figcaption class="text">Filler text</figcaption>
             </figure>
             <!--Card 4-->
             <figure>
                 <a href="https://www.fiverr.com/categories/graphics-design" target="_blank">
                     <img src="assets/images/tyler's logo.png" alt="Image displays the developer's custom made logo; an avatar in a suit within a golden lyre.">
                 </a>
-                <figcaption>
+                <figcaption class="text">
                     <h3>Graphic Design</h3>
                     <p>To explore my creative side, I dabble in graphic design with Adobe Illustrator as a hobby. I enjoy crafting logos that hold symbolic meaning to their respective brand's identity.</p>
                 </figcaption>
@@ -71,14 +71,14 @@
                 <a href="https://www.youtube.com/channel/UCwrAvfhPXaXjpq1d2OibzlQ/featured" target="_blank">
                     <img src="assets/images/monarch-musicians-logo.JPG" alt="Logo design of a monarch butterfly with a M in the center. The head and antennae of the butterfly resemble a musical note. The design resembles a superhero's chest emblem. Below the design reads: 'Monarch Musicians. Practice. Persevere. Perform.'">
                 </a>
-                <figcaption>
+                <figcaption class="text">
                     <h3>Content Creation</h3>
                     <p>In my past career as an elementary music educator, I supplemented my instructional resources with videos that ran through my educational YouTube channel. While working full-time, I taught myself audio and video editing skills to create an engaging experience of musical content for my students.</p>
                 </figcaption>
             </figure>
         </section>
             
-        <section id="contact-me">
+        <section class="section3" id="contact-me">
             <h2 class="section-headers">Contact Me</h2>
             <ul>
                 <!--The "mailto:" opens a computer's mail app with the email provided as the receiver.-->
@@ -87,11 +87,11 @@
             <li><span>GitHub:  </span><a href="https://github.com/TDEvans97">TDEvans97</a></li>
             </ul>
         </section>
-
     </main>
 
     <footer>
         <a href="#top-of-page">Back to top</a>
     </footer>
+
 </body>
 </html>

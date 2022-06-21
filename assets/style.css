@@ -1,7 +1,92 @@
 html {
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
 * {
     font-family: monospace;
+}
+
+header, main, footer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+header, footer {
+    justify-content: space-around;
+    align-items: center;
+    background-color: #455E5A;
+    padding: 10px 0;
+    
+}
+/*Header CSS */
+header {
+    max-height: 50%;
+}
+
+.header-logo-name {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header-logo-name img {
+    height: 96px;
+    flex: 2 1;
+    padding: 5px 0;
+}
+
+.header-logo-name > h1 {
+    padding-left: 10px;
+}
+
+nav {
+    display: flex;
+}
+
+header > * {
+    padding: 0 1vw;
+}
+
+.nav-ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.nav-ul li {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+    padding: 5px 20px 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/*Main CSS*/
+.section1, .section2, .section3 {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-weight: normal;
+}
+
+.text {
+    font-size: 16px;
+}
+
+.section-headers, h1 {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+h2 {
+    align-items: flex-start;
+    padding: 1%;
 }
