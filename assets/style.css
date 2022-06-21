@@ -79,11 +79,14 @@ nav {
     font-weight: bold;
 }
 
+.section-headers, h1 {
+    font-weight: bold;
+    font-size: 22px;
+}
+
 /*Main CSS*/
 main {
-    
-    /*align-items: center;
-    justify-content: center;*/
+   
 }
 
 .section1, .section2, .section3 {
@@ -97,11 +100,11 @@ main {
 
 .section-1-content {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
+
 .section1 img {
     display: flex;
     flex-wrap: wrap;
@@ -111,24 +114,28 @@ main {
 }
 
 .flex-box {
-    display: flex;
-    flex-wrap: wrap;
+    /*display: flex;
+    flex-wrap: wrap;*/
+    align-items: flex-end;
 }
+
 .text {
     font-size: 16px;
 }
 
-.section-headers, h1 {
-    font-weight: bold;
-    font-size: 22px;
-}
 
 h2 {
     align-items: flex-start;
     padding: 1%;
 }
 
-figure {
-    display: flex;
+.card {
+    flex: 1 0 0;
+    align-items: center;
     border: solid 2px green;
+}
+
+.card img {
+    width: 100%;
+    min-width: 400px;
 }
