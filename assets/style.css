@@ -27,11 +27,16 @@ header, footer {
     background-color: var(--color5);
     color: var(--color1);
     padding: 10px 0;
-    
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 22px;
 }
 
 
 /*Header CSS */
+
 header {
     max-height: 50%;
 }
@@ -49,7 +54,7 @@ header > * {
 
 .header-logo-name img {
     height: 96px; 
-    flex: 2 1 auto;
+    flex: 1 1 auto;
     padding: 5px 0;
 }
 
@@ -72,8 +77,6 @@ nav {
 }
 
 .nav-ul li {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-content: space-around;
     padding: 5px 20px 0;
@@ -81,58 +84,66 @@ nav {
     font-weight: bold;
 }
 
-.section-headers, h1 {
-    font-weight: bold;
-    font-size: 22px;
-}
 
 /*Selects "About Me", "My Projects", "Contact Me" */
 .section-headers {
     flex: 0 0 auto;
-    border: solid 1px blue;
-    display: inline;
+    border: dotted 2px green;
+    border-right: var(--color4) solid 5px;
+    padding: 25px 5px;
+    margin-right: 10px;
+    display: inline; /*Overrides the default: display:block */
+    font-weight: bold;
+    font-size: 22px;
 }
 
 /*Main CSS*/
+
 main {
-   
+ /*reference line 24 to see what main is not selected for*/
 }
 
 .section1, .section2, .section3 {
     display: flex;
     flex-wrap: wrap;
     font-weight: normal;
-    border: solid 1px red;
+    border: dotted 2px red;
+} 
+
+.section1, .section2 {
+    border-bottom: var(--color4) solid 5px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 
-.section-1-content {
+/*Overwrites top rule */
+.section1 {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.section1-photo {
+    display: flex;
     flex-wrap: wrap;
     justify-items: center;
     align-items: center;
 }
 
-.section1 img {
-    flex: 50 auto;
-    max-width: 20%;
-    display: flex;
-    flex-wrap: wrap;
+.section1-photo img {
+    max-width: 30%;
+    min-width: 20%;
 }
 
-.flex-box {
-    flex: 0 0 auto;
+.section1-text {
     display: flex;
-    flex-wrap: wrap;
-    width: 100%;
 }
 
 .text {
     font-size: 16px;
-    display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    text-align: center; /*Left is default, play around with center for design*/
 }
-
 
 /*.card-container is flexing to .section2 container*/
 .card-container {
