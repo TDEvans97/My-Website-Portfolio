@@ -29,6 +29,8 @@ header, footer {
     padding: 10px 0;
     
 }
+
+
 /*Header CSS */
 header {
     max-height: 50%;
@@ -46,8 +48,8 @@ header > * {
 }
 
 .header-logo-name img {
-    height: 96px;
-    flex: 2 1;
+    height: 96px; 
+    flex: 2 1 auto;
     padding: 5px 0;
 }
 
@@ -84,6 +86,13 @@ nav {
     font-size: 22px;
 }
 
+/*Selects "About Me", "My Projects", "Contact Me" */
+.section-headers {
+    flex: 0 0 auto;
+    border: solid 1px blue;
+    display: inline;
+}
+
 /*Main CSS*/
 main {
    
@@ -92,8 +101,6 @@ main {
 .section1, .section2, .section3 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     font-weight: normal;
     border: solid 1px red;
 }
@@ -101,41 +108,72 @@ main {
 .section-1-content {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-items: center;
     align-items: center;
 }
 
 .section1 img {
+    flex: 50 auto;
+    max-width: 20%;
     display: flex;
     flex-wrap: wrap;
-    flex: 0 5 128px;
-    height: 20%;
-    width: 20%;
 }
 
 .flex-box {
-    /*display: flex;
-    flex-wrap: wrap;*/
-    align-items: flex-end;
+    flex: 0 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .text {
     font-size: 16px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
-h2 {
-    align-items: flex-start;
-    padding: 1%;
+/*.card-container is flexing to .section2 container*/
+.card-container {
+    flex: 0 0 0;
+    width: auto;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .card {
-    flex: 1 0 0;
-    align-items: center;
+    flex: 0 1 25%;
+    text-align: center;
     border: solid 2px green;
+    display: flex; /*.card is a figure container for an img, h3, and p.*/
+    flex-wrap: wrap; 
 }
 
-.card img {
-    width: 100%;
-    min-width: 400px;
+/*Make the anchor tag wrap to the figure or .card container*/
+.card a {
+    flex: 0 0 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
+
+/*Make the img nested inside the anchor wrap to the anchor*/
+a img {
+    flex: 0 0 0;
+}
+
+/*Edit responsive sizing on the imgs within the cards*/
+.card img {
+    flex: 1 1 0%;
+    width: 100%;
+    min-width: 200px;
+    max-width: 400px;
+    display: flex; 
+}
+
+.card figcaption {
+    flex: 0 0 100%;
+}
+
