@@ -99,9 +99,7 @@ nav {
 
 /*Main CSS*/
 
-main {
- /*reference line 24 to see what main is not selected for*/
-}
+/* main {} reference line 24 to see what main is not selected for*
 
 .section1, .section2, .section3 {
     display: flex;
