@@ -85,21 +85,15 @@ nav {
 }
 
 
-/*Selects "About Me", "My Projects", "Contact Me" */
-.section-headers {
-    flex: 0 0 auto;
-    border: dotted 2px green;
-    border-right: var(--color4) solid 5px;
-    padding: 25px 5px;
-    margin-right: 10px;
-    display: inline; /*Overrides the default: display:block */
-    font-weight: bold;
-    font-size: 22px;
-}
 
 /*Main CSS*/
+/*reference line 24*/
+/* 
+main {
+    
+} 
 
-/* main {} reference line 24 to see what main is not selected for*
+*/
 
 .section1, .section2, .section3 {
     display: flex;
@@ -114,75 +108,108 @@ nav {
     margin-bottom: 10px;
 }
 
-/*Overwrites top rule */
-.section1 {
-    display: flex;
-    flex-wrap: wrap;
+/*Selects text "About Me", "My Projects", "Contact Me" */
+.section-headers {
+    border: var(--color4) solid 5px;
+    padding: 25px 5px;
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 22px;
+    align-content: center;
+    justify-content: center;
 }
 
-.section1-photo {
-    display: flex;
-    flex-wrap: wrap;
-    justify-items: center;
+/* Section 1 About Me */
+
+.section1 {
     align-items: center;
 }
 
-.section1-photo img {
-    max-width: 30%;
-    min-width: 20%;
-}
-
-.section1-text {
+.section1-header {
+    flex: 1 1 auto;
     display: flex;
 }
 
-.text {
+.section1-figure {
+    flex: 1 1 33%;
+    display: flex;
+    align-items: center;
+    max-width: 33%;
+}
+
+.section1-figure img {
+    max-width: 100%;
+    border: solid 3px var(--color5);
+} 
+
+.section1 p {
+    flex: 1 1 33%;
     font-size: 16px;
     justify-content: center;
     align-content: center;
     text-align: center; /*Left is default, play around with center for design*/
+    border: solid 2px var(--color4);
+    margin: 0 5%;
+    display: flex;
+    align-items: center;
+    max-width: 33%;
 }
 
-/*.card-container is flexing to .section2 container*/
-.card-container {
-    flex: 0 0 0;
-    width: auto;
-    height: fit-content;
+/* Section 2 My Projects */
+
+.section2 {
+    align-items: center;
+}
+
+.section2-header {
+    flex: 1 0 200px;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 10px 10px;
+}
+
+.card-container {
+    display: flex;
     flex-wrap: wrap;
 }
 
 .card {
-    flex: 0 1 25%;
+    flex: 1 0 50%; /* each card will take up half of the section container. */
     text-align: center;
-    border: solid 2px green;
-    display: flex; /*.card is a figure container for an img, h3, and p.*/
+    display: flex; 
     flex-wrap: wrap; 
+    align-content: center;
+    justify-content: center;
+    border: solid 2px purple;
 }
 
-/*Make the anchor tag wrap to the figure or .card container*/
+/*Make the anchor tag wrap to the figure class= "card". */
 .card a {
-    flex: 0 0 100%;
     display: flex;
     flex-wrap: wrap;
+    max-width: 100%;
 }
 
-/*Make the img nested inside the anchor wrap to the anchor*/
+/*Make the img nested inside the anchor occupy the full width of the anchor. */
 a img {
-    flex: 0 0 0;
-}
-
-/*Edit responsive sizing on the imgs within the cards*/
-.card img {
-    flex: 1 1 0%;
-    width: 100%;
-    min-width: 200px;
-    max-width: 400px;
-    display: flex; 
+    max-width: 100%;
 }
 
 .card figcaption {
-    flex: 0 0 100%;
+    width: 100%; /* each figcaption in a card will take up the full available width of the flex container. */
 }
 
+.calculator-card {
+    flex: 2 1 100%; /* the calculator card is going to take up the full width of the section container for emphasis. */
+}
+
+/* Section 3 Contact Me */
+
+.section3 {
+    align-items: center;
+}
+
+.section3-header {
+    flex: 1 1 auto;
+    display: flex;
+}
