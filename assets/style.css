@@ -61,7 +61,7 @@ header > * {
 }
 
 .header-logo-name h1 {
-    padding-left: 10px;
+    margin-left: 10px;
 }
 
 header a, footer a {
@@ -182,7 +182,7 @@ main {
 }
 
 .card {
-    flex: 1 0 50%; /* each card will take up half of the section container. */
+    flex: 1 0 50%; /* each card will take up half of the card container. */
     text-align: center;
     display: flex; 
     flex-wrap: wrap; 
@@ -192,7 +192,7 @@ main {
     border: solid 5px var(--color4);
 }
 
-/*Make the anchor tag wrap to the figure class= "card". */
+/*Make the anchor tag wrap to the figure class="card". */
 .card a {
     display: flex;
     flex-wrap: wrap;
@@ -210,6 +210,7 @@ a img {
     background-color: var(--color1);
     border: solid 5px var(--color5);
     font-size: 16px;
+    padding: 5px;
 }
 
 .card figcaption h3 {
@@ -241,6 +242,13 @@ a img {
     padding: 10px;
     background-color: var(--color2);
     text-align: left; /* The default is already left, consider future change.*/
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Footer */
+
+footer {
     font-size: 16px;
     font-weight: bold;
 }
