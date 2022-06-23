@@ -100,6 +100,7 @@ main {
     flex-wrap: wrap;
     font-weight: normal;
     border: dotted 2px red;
+    width: 100%;
 } 
 
 .section1, .section2 {
@@ -112,7 +113,7 @@ main {
 .section-headers {
     border: var(--color4) solid 5px;
     padding: 25px 5px;
-    margin-right: 10px;
+    margin: 0 10px;
     font-weight: bold;
     font-size: 22px;
     align-content: center;
@@ -126,12 +127,12 @@ main {
 }
 
 .section1-header {
-    flex: 1 1 auto;
+    flex: 1 0 auto;
     display: flex;
 }
 
 .section1-figure {
-    flex: 1 1 33%;
+    flex: 1 0 33%;
     display: flex;
     align-items: center;
     max-width: 33%;
@@ -143,7 +144,7 @@ main {
 } 
 
 .section1 p {
-    flex: 1 1 33%;
+    flex: 1 0 33%;
     font-size: 16px;
     justify-content: center;
     align-content: center;
@@ -162,7 +163,7 @@ main {
 }
 
 .section2-header {
-    flex: 1 0 200px;
+    flex: 1 0 auto;
     display: flex;
     flex-wrap: wrap;
     margin: 10px 10px;
@@ -207,9 +208,12 @@ a img {
 
 .section3 {
     align-items: center;
+    margin-bottom: 10px;
 }
 
 .section3-header {
-    flex: 1 1 auto;
+    flex: 1 0 auto;
     display: flex;
+    flex-wrap: wrap;
+    margin: 10px 10px;
 }
